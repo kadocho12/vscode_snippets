@@ -1,0 +1,275 @@
+{
+	// Place your snippets for scss here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//
+	// "スニペットの説明": {
+	// 	"prefix": "sectionBlock",
+	// 	"body": [
+	// 			"<section class=\"$1\">",
+	// 			"\t<div class=\"$2\">",
+	// 			"\t\t$3",
+	// 			"\t</div>",
+	// 			"</section>"
+	// 	]
+	// },
+	// $1:フォーカス当てる箇所と順番を指定できる。2番目にフォーカス当てたい箇所は$2を指定。Tabキーで移動できる。
+	// \：ダブルクォーテーションなどを認識させるようにできる。
+	// \t：はタブの挿入
+	//
+	"Print background-imageセット": {
+		"prefix": "background-imageセット⭐️",
+		"body": [
+			"background-image: url($1);",
+			"background-size: cover;",
+			"background-position: center;",
+			"background-repeat: no-repeat;",
+		],
+		"description": ""
+	},
+	"Print background-color": {
+		"prefix": "background-color⭐️",
+		"body": [
+			"background-color: $1;"
+		],
+		"description": ""
+	},
+	"Print before": {
+		"prefix": "before⭐️",
+		"body": [
+			"&::before {",
+			"\tcontent: \"\";",
+			"\tdisplay: block;",
+			"\twidth: $1;",
+			"\theight: ;",
+			"\tposition: absolute;",
+			"\ttop: ;",
+			"\tleft: ;",
+			"}"
+		],
+		"description": ""
+	},
+	"Print after": {
+		"prefix": "after⭐️",
+		"body": [
+			"&::after {",
+			"\tcontent: \"\";",
+			"\tdisplay: block;",
+			"\twidth: $1;",
+			"\theight: ;",
+			"\tposition: absolute;",
+			"\ttop: ;",
+			"\tleft: ;",
+			"}"
+		],
+		"description": ""
+	},
+	"Print media query rwd": {
+		"prefix": "mediaQuery rwd⭐️",
+		"body": [
+			"@include rwd() {",
+			"\t$1",
+			"}"
+		],
+		"description": ""
+	},
+	"Print media query pc": {
+		"prefix": "mediaQuery pc⭐️",
+		"body": [
+			"@include pc() {",
+			"\t$1",
+			"}"
+		],
+		"description": ""
+	},
+	"Print media query sp": {
+		"prefix": "mediaQuery sp⭐️",
+		"body": [
+			"@include sp() {",
+			"\t$1",
+			"}"
+		],
+		"description": ""
+	},
+	// "Print calc": {
+	// 	"prefix": "calc⭐️",
+	// 	"body": [
+	// 		"calc($1)",
+	// 	],
+	// 	"description": ""
+	// },
+	"Print calc パートナー": {
+		"prefix": "calcパートナー⭐️",
+		"body": [
+			"calc(${1:Figmaのサイズをそのまま入れる} / ${2:親要素の横幅} * 100%)",
+		],
+		"description": ""
+	},
+	"Print absolute": {
+		"prefix": "position absolute 上と右基準⭐️",
+		"body": [
+			"position: absolute;",
+			"top: 0;",
+			"right: 0;",
+		],
+		"description": ""
+	},
+	"Print absolute 全体覆う": {
+		"prefix": "position absolute 全体覆う⭐️",
+		"body": [
+			"position: absolute;",
+			"top: 0;",
+			"right: 0;",
+			"width: 100%;",
+			"height: 100%;",
+		],
+		"description": ""
+	},
+	"Print transform": {
+		"prefix": "transform translate⭐️",
+		"body": [
+			"transform: translate(${1:X軸} ${2:Y軸});",
+		],
+		"description": ""
+	},
+	"Print flex center center": {
+		"prefix": "displayFlex上下左右中央⭐️",
+		"body": [
+			"display: flex;",
+			"justify-content: center;",
+			"align-items: center;",
+		],
+		"description": ""
+	},
+	"Print flex wrap": {
+		"prefix": "displayFlexWrap⭐️",
+		"body": [
+			"display: flex;",
+			"flex-wrap: wrap;",
+		],
+		"description": ""
+	},
+	"Print flex wrap negative margin": {
+		"prefix": "displayFlexWrap↑←⭐️",
+		"body": [
+			"display: flex;",
+			"flex-wrap: wrap;",
+			"margin-top: -$1px;",
+			"margin-left: -$2px;",
+		],
+		"description": ""
+	},
+	"Print text-decoration": {
+		"prefix": "text-decoration⭐️",
+		"body": [
+			"text-decoration: underline;",
+		],
+		"description": ""
+	},
+	"Print text-align:center": {
+		"prefix": "text-align center⭐️",
+		"body": [
+			"text-align: center;",
+		],
+		"description": ""
+	},
+	"Print outline": {
+		"prefix": "outline⭐️",
+		"body": [
+			"outline: ${1:1px} solid ${2:inherit};",
+		],
+		"description": ""
+	},
+	"Print border": {
+		"prefix": "border⭐️",
+		"body": [
+			"border: ${1:1px} solid ${2:#fff};",
+		],
+		"description": ""
+	},
+	"Print font-weight bold": {
+		"prefix": "fontWeightBold⭐️",
+		"body": [
+			"font-weight: bold;",
+		],
+		"description": ""
+	},
+	// "Print font-size": {
+	// 	"prefix": "font-size: px;⭐️",
+	// 	"body": [
+	// 		"font-size: $1px;",
+	// 	],
+	// 	"description": ""
+	// },
+	"Print font-size @include": {
+		"prefix": "fontSize()⭐️",
+		"body": [
+			"@include fontSize($1);",
+		],
+		"description": ""
+	},
+	"Print hover": {
+		"prefix": "hover⭐️",
+		"body": [
+			"&:hover {",
+			"\t$1",
+			"}",
+		],
+		"description": ""
+	},
+	"Print first-child": {
+		"prefix": "first-child⭐️",
+		"body": [
+			"&:first-child {",
+			"\t$1",
+			"}",
+		],
+		"description": ""
+	},
+	"Print last-child": {
+		"prefix": "last-child⭐️",
+		"body": [
+			"&:last-child {",
+			"\t$1",
+			"}",
+		],
+		"description": ""
+	},
+	"Print first-of-type": {
+		"prefix": "first-of-type⭐️",
+		"body": [
+			"&:first-of-type {",
+			"\t$1",
+			"}",
+		],
+		"description": ""
+	},
+	"Print last-of-type": {
+		"prefix": "last-of-type⭐️",
+		"body": [
+			"&:last-of-type {",
+			"\t$1",
+			"}",
+		],
+		"description": ""
+	},
+	"Print nth-child": {
+		"prefix": "nth-child⭐️",
+		"body": [
+			"&:nth-child($1) {",
+			"\t",
+			"}",
+		],
+		"description": ""
+	},
+}
